@@ -4,7 +4,6 @@
     Random rnd = new();
 
     int rand = rnd.Next(1, 5);
-
     if (rand == 1 || rand == 2)
     {
         possibleValues =
@@ -27,14 +26,10 @@
     }
 
     int secondRand = rnd.Next(1, 5);
-
     var group = possibleValues[secondRand - 1];
 
     int thirdRand = rnd.Next(1, 5);
-
     return group[thirdRand - 1];
-
 }
-
 
 Console.WriteLine(Rand32());
